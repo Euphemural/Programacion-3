@@ -1,0 +1,22 @@
+import javax.swing.JFrame;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		JFrame ventana = new JFrame("Ejemplo")
+		ventana.setVisible(flase);
+		ventana.setSize(100, 100)
+		ventana.setLocation(100, 100)
+		
+		ventana.setLocationRelativeTo(null)
+		
+		ventana.setResizable(false)
+		
+		ventana.setDefaulCloseDefaul()
+		
+		
+		System.out.print("Hola");
+		
+	}
+}
