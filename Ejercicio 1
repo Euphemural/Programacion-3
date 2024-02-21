@@ -109,6 +109,8 @@ public class Ventana_1 extends JFrame
         no_accepto.setOpaque(true);
         registro.add(no_accepto);
 
+        //Añadir un JComboBox de las colonias de La Paz.
+
         ButtonGroup terminos = new ButtonGroup();
         terminos.add(accepto);
         terminos.add(no_accepto); 
