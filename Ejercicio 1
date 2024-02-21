@@ -110,6 +110,7 @@ public class Ventana_1 extends JFrame
         registro.add(no_accepto);
 
         //Añadir un JComboBox de las colonias de La Paz.
+        //Añadir minimom 5 colonias
 
         ButtonGroup terminos = new ButtonGroup();
         terminos.add(accepto);
@@ -119,6 +120,7 @@ public class Ventana_1 extends JFrame
         this.repaint();
         this.validate();
     }
+
 
     public void login()
     {
