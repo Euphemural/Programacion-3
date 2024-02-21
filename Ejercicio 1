@@ -1,7 +1,11 @@
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
+import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
@@ -28,8 +32,95 @@ public class Ventana_1 extends JFrame
 	
 	public void iniciarComponentes() 
 	{
-		
-		JPanel login = new JPanel();
+		this.login();
+        this.registro();
+	}
+
+    public void registro()
+    {
+        JPanel registro = new JPanel();
+		registro.setSize(this.getWidth()/2, this.getHeight());
+        registro.setLocation(500, 0);
+		registro.setBackground(Color.blue);
+        registro.setLayout(null);
+
+        JLabel nuevo = new JLabel("Registro");
+        nuevo.setSize(310, 80);
+        nuevo.setLocation(85, 20);
+        nuevo.setBackground(Color.RED);
+        nuevo.setOpaque(true);
+        nuevo.setLayout(null);
+        nuevo.setHorizontalAlignment(SwingConstants.CENTER);
+        nuevo.setFont(new Font("Birds of Paradise", Font.ITALIC, 45));
+        nuevo.setForeground(Color.WHITE);
+        registro.add(nuevo);
+
+        JLabel nombre_usuario = new JLabel("Nombre de usuario");
+        nombre_usuario.setBounds(20, 120, 150, 30);
+        nombre_usuario.setBackground(Color.blue);
+        nombre_usuario.setOpaque(true);
+        nombre_usuario.setForeground(Color.WHITE);
+        registro.add(nombre_usuario);
+
+        JTextField registro_usuario = new JTextField();
+        registro_usuario.setBounds(20, 150, 150, 30);
+        registro_usuario.setBackground(Color.white);
+        registro_usuario.setOpaque(true);
+        registro_usuario.setLayout(null);
+        registro_usuario.setHorizontalAlignment(SwingConstants.CENTER);
+        registro.add(registro_usuario);
+
+        JLabel biografia = new JLabel("Tu Biografia");
+        biografia.setBounds(20, 250, 150, 30);
+        biografia.setBackground(Color.blue);
+        biografia.setOpaque(true);
+        biografia.setForeground(Color.white);
+        registro.add(biografia);
+
+        JTextArea biografia_usuario = new JTextArea();
+        biografia_usuario.setBounds(20, 300, 300, 120);
+        biografia_usuario.setBackground(Color.white);
+        biografia_usuario.setOpaque(true);
+        registro.add(biografia_usuario);
+
+        JLabel preferencias = new JLabel("Preferencias");
+        preferencias.setBounds(30, 425, 100, 30);
+        preferencias.setBackground(Color.blue);
+        preferencias.setOpaque(true);
+        preferencias.setForeground(Color.white);
+        registro.add(preferencias);
+
+        JCheckBox item_box_1 = new JCheckBox("Dulces");
+        item_box_1.setBounds(30, 460, 100, 30);
+        item_box_1.setFont(new Font("Arial", Font.BOLD, 20));
+        registro.add(item_box_1);
+
+        JRadioButton accepto = new JRadioButton("Acepto los terminos");
+        accepto.setBounds(30, 500, 200, 20);
+        accepto.setFont(new Font("Arial", Font.BOLD, 20));
+        accepto.setBackground(Color.white);
+        accepto.setOpaque(true);
+        registro.add(accepto);
+
+        JRadioButton no_accepto = new JRadioButton("No acepto los terminos");
+        no_accepto.setBounds(250, 500, 200, 20);
+        no_accepto.setFont(new Font("Arial", Font.BOLD, 20));
+        no_accepto.setBackground(Color.white);
+        no_accepto.setOpaque(true);
+        registro.add(no_accepto);
+
+        ButtonGroup terminos = new ButtonGroup();
+        terminos.add(accepto);
+        terminos.add(no_accepto); 
+        
+        this.add(registro);
+        this.repaint();
+        this.validate();
+    }
+
+    public void login()
+    {
+        JPanel login = new JPanel();
 		login.setSize(this.getWidth()/2, this.getHeight());
 		login.setBackground(Color.gray);
 		login.setLayout(null);
@@ -105,15 +196,10 @@ public class Ventana_1 extends JFrame
         ingresar.setFont(new Font("Brids of Paradise", Font.ITALIC + Font.BOLD, 18));
         login.add(ingresar);
 
-
-		JPanel registro = new JPanel();
-		registro.setSize(this.getWidth()/2, this.getHeight());
-		registro.setBackground(Color.green);
-        registro.setLayout(null);
-
 		this.add(login);
-		this.add(registro);
-	}
+        this.repaint();
+        this.validate();
+    }
 
     public static void main(String[] args) {
         new Ventana_1();
