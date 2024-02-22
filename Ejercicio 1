@@ -32,8 +32,9 @@ public class Ventana_1 extends JFrame
 	
 	public void iniciarComponentes() 
 	{
-		this.login();
-        this.registro();
+		//this.login();
+        //this.registro();
+        this.admin();
 	}
 
     public void registro()
@@ -205,8 +206,56 @@ public class Ventana_1 extends JFrame
         this.validate();
     }
 
+    public void admin() {
+        JPanel admin_panel = new JPanel();
+        admin_panel.setSize(this.getWidth(), this.getHeight());
+        admin_panel.setLocation(0,0);
+        admin_panel.setBackground(Color.decode());
+        admin_panel.setLayout(null);
+
+        JMenuBar barra = new JMenuBar();
+        JMenu menu_file = new JMenu("Archivo");
+        JMenuItem open_item = new JMenuItem("Abrir archivo");
+        JMenuItem create_archive = new JMenuItem("Crear Archivo");
+
+        barra.add(menu_file);
+        menu_file.add(open_item);
+        menu_file.add(create_archive);
+
+        this.setJMenuBar(barra);
+
+        //Añadir Tabla
+
+        JLabel user_tag = new JLabel("Acceder");
+		user_tag.setSize(310, 80);
+		user_tag.setLocation(85, 20);
+		user_tag.setOpaque(true);
+		user_tag.setBackground(Color.red);
+        user_tag.setHorizontalAlignment(SwingConstants.CENTER);
+        user_tag.setFont(new Font("Birds of Paradise", Font.ITALIC, 45));
+        user_tag.setForeground(Color.WHITE);
+		admin_panel.add(user_tag);
+
+        JLabel title_widget = new JLabel("Total de usuarios");
+        title_widget.setBounds(40, 160, 100, 100);
+        title_widget.setForeground(Color.WHITE);
+        admin_panel.add(title_widget);
+
+        JLabel content_widget = new JLabel("100");
+        content_widget.setBounds(40, 160, 100, 100);
+        content_widget.setForeground(Color.WHITE);
+        admin_panel.add(content_widget);
+
+        JLabel widget = new JLabel();
+        widget.setBounds(40, 120, 100, 100);
+        widget.setOpaque(true);
+        widget.setBackground(Color.BLACK);
+        admin_panel.add(widget);
+
+        this.add(admin_panel);
+    }
+
     public static void main(String[] args) {
         new Ventana_1();
     }
-
 }
