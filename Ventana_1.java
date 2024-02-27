@@ -194,40 +194,50 @@ public class Ventana_1 extends JFrame
         boton_ac.setBounds(170, 115, 60, 30);
         boton_ac.setOpaque(true);
         boton_ac.setBackground(Color.WHITE);
+        boton_ac.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_ac.setForeground(Color.BLACK);
         boton_ac.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_ac.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_ac);
 
         JButton boton_ocho = new JButton("8");
         boton_ocho.setBounds(170, 155, 60, 30);
         boton_ocho.setOpaque(true);
         boton_ocho.setBackground(Color.WHITE);
+        boton_ocho.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_ocho.setForeground(Color.BLACK);
         boton_ocho.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_ocho.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_ocho);
 
         JButton boton_cinco = new JButton("5");
         boton_cinco.setBounds(170, 195, 60, 30);
         boton_cinco.setOpaque(true);
         boton_cinco.setBackground(Color.WHITE);
+        boton_cinco.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_cinco.setForeground(Color.BLACK);
         boton_cinco.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_cinco.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_cinco);
 
         JButton boton_dos = new JButton("2");
         boton_dos.setBounds(170, 235, 60, 30);
         boton_dos.setOpaque(true);
         boton_dos.setBackground(Color.WHITE);
+        boton_dos.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_dos.setForeground(Color.BLACK);
         boton_dos.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_dos.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_dos);
 
         JButton boton_cero = new JButton("0");
         boton_cero.setBounds(170, 275, 60, 30);
         boton_cero.setOpaque(true);
         boton_cero.setBackground(Color.WHITE);
+        boton_cero.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_cero.setForeground(Color.BLACK);
         boton_cero.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_cero.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_cero);
 
         //Cuarta Linea
@@ -236,48 +246,60 @@ public class Ventana_1 extends JFrame
         boton_perentesis1.setBounds(250, 75, 60, 30);
         boton_perentesis1.setOpaque(true);
         boton_perentesis1.setBackground(Color.WHITE);
+        boton_perentesis1.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_perentesis1.setForeground(Color.BLACK);
         boton_perentesis1.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_perentesis1.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_perentesis1);
 
         JButton boton_porsentaje = new JButton("%");
         boton_porsentaje.setBounds(250, 115, 60, 30);
         boton_porsentaje.setOpaque(true);
         boton_porsentaje.setBackground(Color.WHITE);
+        boton_porsentaje.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_porsentaje.setForeground(Color.BLACK);
         boton_porsentaje.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_porsentaje.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_porsentaje);
 
         JButton boton_nueve = new JButton("9");
         boton_nueve.setBounds(250, 155, 60, 30);
         boton_nueve.setOpaque(true);
         boton_nueve.setBackground(Color.WHITE);
+        boton_nueve.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_nueve.setForeground(Color.BLACK);
         boton_nueve.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_nueve.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_nueve);
 
         JButton boton_seis = new JButton("6");
         boton_seis.setBounds(250, 195, 60, 30);
         boton_seis.setOpaque(true);
         boton_seis.setBackground(Color.WHITE);
+        boton_seis.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_seis.setForeground(Color.BLACK);
         boton_seis.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_seis.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_seis);
 
         JButton boton_tres = new JButton("3");
         boton_tres.setBounds(250, 235, 60, 30);
         boton_tres.setOpaque(true);
         boton_tres.setBackground(Color.WHITE);
+        boton_tres.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_tres.setForeground(Color.BLACK);
         boton_tres.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_tres.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_tres);
 
         JButton boton_decimal = new JButton(".");
         boton_decimal.setBounds(250, 275, 60, 30);
         boton_decimal.setOpaque(true);
         boton_decimal.setBackground(Color.WHITE);
+        boton_decimal.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_decimal.setForeground(Color.BLACK);
         boton_decimal.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_decimal.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_decimal);
 
         //Quinta Linea 
@@ -286,48 +308,60 @@ public class Ventana_1 extends JFrame
         boton_perentesis2.setBounds(330, 75, 60, 30);
         boton_perentesis2.setOpaque(true);
         boton_perentesis2.setBackground(Color.WHITE);
+        boton_perentesis2.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_perentesis2.setForeground(Color.BLACK);
         boton_perentesis2.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_perentesis2.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_perentesis2);
 
-        JButton boton_division = new JButton("÷");
+        JButton boton_division = new JButton("/");
         boton_division.setBounds(330, 115, 60, 30);
         boton_division.setOpaque(true);
         boton_division.setBackground(Color.WHITE);
+        boton_division.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_division.setForeground(Color.BLACK);
         boton_division.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_division.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_division);
 
-        JButton boton_multiplicacion = new JButton("*");
+        JButton boton_multiplicacion = new JButton("x");
         boton_multiplicacion.setBounds(330, 155, 60, 30);
         boton_multiplicacion.setOpaque(true);
         boton_multiplicacion.setBackground(Color.WHITE);
+        boton_multiplicacion.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_multiplicacion.setForeground(Color.BLACK);
         boton_multiplicacion.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_multiplicacion.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_multiplicacion);
 
         JButton boton_resta = new JButton("-");
         boton_resta.setBounds(330, 195, 60, 30);
         boton_resta.setOpaque(true);
         boton_resta.setBackground(Color.WHITE);
+        boton_resta.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_resta.setForeground(Color.BLACK);
         boton_resta.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_resta.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_resta);
 
         JButton boton_suma = new JButton("+");
         boton_suma.setBounds(330, 235, 60, 30);
         boton_suma.setOpaque(true);
         boton_suma.setBackground(Color.WHITE);
+        boton_suma.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_suma.setForeground(Color.BLACK);
         boton_suma.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_suma.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_suma);
 
         JButton boton_resultado = new JButton("=");
         boton_resultado.setBounds(330, 275, 60, 30);
         boton_resultado.setOpaque(true);
         boton_resultado.setBackground(Color.WHITE);
+        boton_resultado.setFont(new Font("Arial", Font.PLAIN, 12));
         boton_resultado.setForeground(Color.BLACK);
         boton_resultado.setHorizontalTextPosition(SwingConstants.CENTER);
+        boton_resultado.setBorder(BorderFactory.createLineBorder(Color.black, 2));
         fondoCalculadora.add(boton_resultado);
 
         this.add(fondoCalculadora);
