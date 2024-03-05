@@ -1,3 +1,4 @@
+import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -7,13 +8,22 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
+import javax.swing.plaf.TreeUI;
 
+import java.awt.BasicStroke;
 import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.GridLayout;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.awt.BasicStroke;
 
 public class Ventana_1 extends JFrame 
 {
@@ -22,9 +32,9 @@ public class Ventana_1 extends JFrame
 	public Ventana_1() 
     {
         this.setVisible(true);
-        this.setSize(415, 355);
+        this.setSize(800, 800);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("Calculadora");
+        this.setTitle("Cobranza de Intereses");
         this.setMinimumSize(new Dimension(250,250));
         this.setMaximumSize(new Dimension(1000,750));
         this.setResizable(true);
@@ -37,11 +47,87 @@ public class Ventana_1 extends JFrame
     public void iniciarComponentes() {
         
         //this.fondoCalculadora();
-        this.calculadora();
+        //this.calculadora();
+        //this.cobranza();
+        this.paint(getGraphics());
 
         this.repaint();
         this.validate();
 
+    }
+
+    @Override
+    public void paint(Graphics g){
+
+        super.paint(g);
+
+        Graphics g2d = (Graphics2D) g;
+
+        //Asignacion de color
+        g2d.setColor(Color.BLUE);
+
+        //Sirve para pintar un cuadrado relleno
+        g2d.fillRect(50, 50, 200, 100);
+
+        //Sirve para limpiar una zona
+        g2d.clearRect(100, 100, 100, 100);
+
+        g2d.fillArc(300, 300, 100, 100, 45, 100);
+        g2d.drawArc(320, 200, 100, 100, 45, 100);
+
+        g2d.setColor(Color.BLACK);
+
+        g2d.drawLine(0, 0, 500, 500);
+
+        g2d.drawOval(400, 400, 50, 50);
+        g2d.fillOval(350, 400, 50, 50);
+
+        int xPoints [] = {100, 250, 300};
+        int yPoints [] = {100, 200, 350};
+
+        //g2d.drawPolyline(xPoints, yPoints, 3);
+
+        g2d.setColor(Color.RED);
+
+        g2d.fillPolygon(xPoints, yPoints, 3);
+
+        g2d.setFont(new Font("Arial", Font.BOLD, 18));
+        g2d. drawString("Hola", 150, 50);
+
+        //g2d.setStroke(new BasicStroke(10));
+
+        g2d.drawRoundRect(420, 150, 200, 150, 0, 10);
+
+        try {
+
+            BufferedImage image = ImageIO.read(new File("src\\polluelo.jpg"));
+
+            g2d.drawImage(image, 0, 0, null);
+        }
+        catch(IOException e) 
+        {
+
+            e.printStackTrace();
+        }
+
+    }
+
+    public void cobranza(){
+
+        this.setSize(800, 800);
+
+        JPanel panel = new JPanel();
+        panel.setSize(this.getWidth(), this.getHeight());
+        panel.setBackground(Color.white);
+        panel.setLayout(null);
+
+        JPanel calculo = new JPanel();
+        calculo.setBounds(10, 50, 300, 300);
+        calculo.setBackground(Color.BLACK);
+        calculo.setLayout(new BorderLayout());
+        panel.add(calculo);
+
+        this.add(panel);
     }
 
     public void calculadora(){
@@ -429,8 +515,5 @@ public class Ventana_1 extends JFrame
         fondoCalculadora.add(boton_resultado);
 
         this.add(fondoCalculadora);
-    }
-    public static void main(String[] args) {
-        new Ventana_1();
     }
 }
